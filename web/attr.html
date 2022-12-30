@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="CSS/attr.css">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+             //$(누가).어떤동작을 할때(이렇게 해라);
+             //$(누구의).무엇을(어떻게); 무엇을 :css ,html ,attr
+             // 어떻게 : display, color, src
+             $('.cooking > img').click(function(){
+                $(this).attr('src', 'images/after.png');
+             });
+        });
+    </script>
+</head>
+<body>
+    <div class="cooking">
+        <img class="pic" src="images/before.jpg" alt="신태일">
+        <img class="pic" src="images/before.jpg" alt="브베">
+    </div>
+</body>
+</html>
